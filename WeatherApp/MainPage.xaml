@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="30,0"
+                             Spacing="25">
+            <Grid ColumnDefinitions="*,Auto,*"
+                  Padding="5">
+                <Frame BackgroundColor="#ccf2f4"
+                x:Name="pFrame"
+                       CornerRadius="150"
+                       Padding="10"
+                       HasShadow="True"
+                       Grid.Column="0">
+                    <Label
+                        Text="Current"
+                        FontSize="Medium"
+                        HorizontalOptions="Center"/>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapLocation"
+                                Tapped="TapLocation_Tapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+                <ImageButton
+                    Source="search.jpg"
+                    HeightRequest="30"
+                    Aspect="AspectFit"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="ImageBtn_Clicked"
+                    Grid.Column="3"/>
+            </Grid>
+            <!-- City and Weather Icon Section -->
+            <Frame BackgroundColor="#d1e0e0"
+                   CornerRadius="10"
+                   Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <Label
+                        x:Name="cityName"
+                        Text="Loading..."
+                        Style="{StaticResource Headline}"
+                        SemanticProperties.HeadingLevel="Level1"/>
+                    <Image
+                        x:Name="weatherImage"
+                        Source="dotnet_bot.png"
+                        HeightRequest="185"
+                        Aspect="AspectFit"
+                        SemanticProperties.Description="Weather Icon"/>
+                    <Label
+                        x:Name="currTemp"
+                        Style="{StaticResource SubHeadline}"
+                        SemanticProperties.HeadingLevel="Level2"/>
+                    <Label
+                        x:Name="currFeel"
+                        Style="{StaticResource SubHeadline}"
+                        SemanticProperties.HeadingLevel="Level2"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Weather Attributes Section -->
+            <Frame BackgroundColor="#e6f7f7"
+                   CornerRadius="10"
+                   Padding="10">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                                       Spacing="20">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image
+                            Source="humidity.png"
+                            HeightRequest="80"
+                            Aspect="AspectFit"/>
+                        <Label
+                            x:Name="lblHumidity"
+                            Text="95%"
+                            FontSize="Default"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image
+                            Source="wind.png"
+                            HeightRequest="80"
+                            Aspect="AspectFit"/>
+                        <Label
+                            x:Name="lblwind"
+                            Text="10Km/hr"
+                            FontSize="Default"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image
+                            Source="visibility.png"
+                            HeightRequest="80"
+                            Aspect="AspectFit"/>
+                        <Label
+                            x:Name="lblVisi"
+                            Text="10 Km"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- 5-Day Forecast Section -->
+            <Frame BackgroundColor="#ccf2f4"
+                   CornerRadius="10"
+                   Padding="10">
+                <VerticalStackLayout Spacing="10">
+                    <!-- Single Day Forecast -->
+                    <Grid ColumnDefinitions="*, Auto, *"
+                          Padding="5">
+                        <Label
+                            Text="30 Jul Today"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"/>
+                        <Image
+                            Source="cloud.jpg"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="20°"
+                            HorizontalOptions="End"
+                            Grid.Column="2"/>
+                    </Grid>
+
+                    <!-- Repeat for other days -->
+                    <Grid ColumnDefinitions="*, Auto, *"
+                          Padding="5">
+                        <Label
+                            Text="31 Jul Tomorrow"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"/>
+                        <Image
+                            Source="cloud.jpg"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="22°"
+                            HorizontalOptions="End"
+                            Grid.Column="2"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*, Auto, *"
+                          Padding="5">
+                        <Label
+                            Text="1 Aug"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"/>
+                        <Image
+                            Source="cloud.jpg"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="25°"
+                            HorizontalOptions="End"
+                            Grid.Column="2"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*, Auto, *"
+                          Padding="5">
+                        <Label
+                            Text="2 Aug"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"/>
+                        <Image
+                            Source="cloud.jpg"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="26°"
+                            HorizontalOptions="End"
+                            Grid.Column="2"/>
+                    </Grid>
+                    <Grid ColumnDefinitions="*, Auto, *"
+                          Padding="5">
+                        <Label
+                            Text="3 Aug"
+                            HorizontalOptions="Start"
+                            Grid.Column="0"/>
+                        <Image
+                            Source="cloud.jpg"
+                            HeightRequest="30"
+                            HorizontalOptions="Center"
+                            Grid.Column="1"/>
+                        <Label
+                            Text="28°"
+                            HorizontalOptions="End"
+                            Grid.Column="2"/>
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

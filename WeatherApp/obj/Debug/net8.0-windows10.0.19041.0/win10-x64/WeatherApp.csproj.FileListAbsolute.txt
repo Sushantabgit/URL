@@ -1,0 +1,12 @@
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\WeatherApp.csproj.AssemblyReference.cache
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\WeatherApp.GeneratedMSBuildEditorConfig.editorconfig
