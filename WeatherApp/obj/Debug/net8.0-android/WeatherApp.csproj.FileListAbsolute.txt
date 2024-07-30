@@ -1050,3 +1050,4 @@ F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-android\resizeti
 F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-android\resizetizer\r\drawable\cloud.png
 F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll
 F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-android\resizetizer\r\drawable\search.jpg
+F:\Sushant\Projects\MAUI\WeatherApp\WeatherApp\obj\Debug\net8.0-android\WeatherApp.sourcelink.json
